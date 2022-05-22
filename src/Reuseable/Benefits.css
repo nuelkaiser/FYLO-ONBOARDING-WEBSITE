@@ -1,0 +1,21 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.benefits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.benefits h2,
+.benefits p {
+    color: azure;
+}
+
+.benefits p {
+    padding: 0px 63px;
+}

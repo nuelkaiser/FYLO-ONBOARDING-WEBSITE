@@ -1,0 +1,31 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+p {
+    color: azure;
+    margin-bottom: 1.4em;
+}
+
+h5, small {
+    color: azure;
+}
+
+.founder{
+    width: 30px;
+    border-radius: 50%;
+}
+
+.test {
+    background:  hsl(219, 30%, 18%);
+    padding: 40px 30px 30px 30px;
+    border-radius: 4px;
+}
+
+.test-container {
+    display: flex;
+    align-items: center;
+    gap: .7em;
+}

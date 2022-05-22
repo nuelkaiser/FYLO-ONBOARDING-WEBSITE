@@ -1,0 +1,12 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.btn {
+    padding: 10px 67px;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    background:  linear-gradient(to right, hsl(176, 68%, 64%),  hsl(198, 60%, 50%));
+}
