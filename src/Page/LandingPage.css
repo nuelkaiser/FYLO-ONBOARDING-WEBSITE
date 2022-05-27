@@ -37,7 +37,6 @@
 
 .intro-inner p {
     padding: 0px 54px;
-    font-size: 16px;
     line-height: 1.4;
     margin: 1.4em 0em;
 }
@@ -80,19 +79,20 @@
     margin-bottom: 1em;
 }
 
-.productive-container span {
+.arr {
     display: flex;
     align-items: center;
     justify-content: center;
     color: hsl(176, 68%, 64%);
     gap: .3em;
     border-bottom: 1px solid hsl(176, 68%, 64%);
-    width: 33%;
+    width: 32%;
     cursor:pointer;
 }
 
 .productive-container img {
     margin-top: 2px;
+    margin-bottom: 0px;
 }
 
 .testimonial-container {
@@ -100,6 +100,67 @@
     align-items: center;
     justify-content: space-evenly;
     gap: 2em;
-    margin:  4em auto ;
+    margin:  8em auto 20em auto ;
     width: 90%;
+}
+
+.footer-container {
+    background: hsl(216, 53%, 9%);
+    position: relative;
+}
+
+.early {
+    background:  hsl(217, 28%, 15%);
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    width: 65%;
+    text-align: center;
+    padding: 20px 50px 35px 50px;
+    border-radius: 12px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: -30%;
+    z-index: 1;
+}
+
+.early h1 {
+    color: azure;
+    padding: 15px 0px; 
+}
+
+.early p {
+    padding: 0px 20px;
+}
+
+
+
+.signup-container {
+    display: flex;
+    align-items: center;
+    gap: 1.2em;
+}
+
+.input-container {
+   
+    height: 6vh;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.signup-input {
+   width: 100%;
+   border: none;
+   outline: none;
+   margin: 0px 12px;
+}
+
+.signup-input::placeholder {
+    
 }

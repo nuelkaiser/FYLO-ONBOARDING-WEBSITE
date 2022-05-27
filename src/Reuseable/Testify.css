@@ -22,6 +22,9 @@ h5, small {
     background:  hsl(219, 30%, 18%);
     padding: 40px 30px 30px 30px;
     border-radius: 4px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 .test-container {

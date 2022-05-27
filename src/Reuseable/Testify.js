@@ -1,20 +1,19 @@
 import React from 'react';
 import './Testify.css';
-import Profile1 from '../images/profile-1.jpg';
 
-const Testify = () => {
+
+const Testify = ({text, img, name, work}) => {
   return (
     <div className='test'>
         <p>
-            Fylo has increased our team productivity by an oder of magnitude.
-            Since making the switch, our team has become a well-oiled collaborative machine.
+           {text}
         </p>
 
         <div className='test-container'>
-            <img className='founder' src={Profile1} alt='profile' />
+            <img className='founder' src={img} alt='profile' />
             <div>
-                <h5>Safish Patel</h5>
-                <small>Ceo of huddle</small>
+                <h5>{name}</h5>
+                <small>{work}</small>
             </div>
         </div>
     </div>
