@@ -17,6 +17,7 @@
     justify-content: space-between;
     gap: 5em;
     margin-top: 3em;
+    color: azure;
 }
 
 .location {
@@ -29,10 +30,17 @@
     margin-top: .3em;
 }
 
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+}
+
 .contact span {
     display: flex;
     align-items: center;
     gap: 1em;
+    cursor: pointer;
 }
 
 .info,
@@ -47,6 +55,13 @@
 .info span,
 .reach span {
     margin-bottom: 9px;
+}
+
+.info span:hover,
+.reach span:hover,
+.contact span:hover {
+    color: #fff;
+    font-weight: 500;
 }
 
 .media {
@@ -72,12 +87,44 @@
     cursor: pointer;
 }
 
-
-
-
-
-img {
-    object-fit: contain;
-    margin-bottom: 1em;
+.media-container:hover {
+    border: 2px solid hsl(176, 68%, 64%);
+    transition-duration: 1s;
 }
 
+.media-container svg:hover {
+    color:  hsl(176, 68%, 64%);
+}
+
+
+
+@media (max-width: 1024px) {
+    .inner-footer {
+        gap: 3em;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .footer {
+        width: 95%;
+    }
+
+    .inner-footer {
+        gap: 2em;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .footer {
+        width: 85%;
+    }
+
+    .inner-footer {
+        gap: 2em;
+        flex-direction: column;
+        font-size: initial;
+    }
+}

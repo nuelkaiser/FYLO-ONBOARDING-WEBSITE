@@ -19,3 +19,25 @@
 .benefits p {
     padding: 0px 63px;
 }
+
+@media (max-width: 1024px) {
+    .benefits p {
+        padding: 0px 30px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .benefits h2 {
+        width: 101%;
+    }
+
+    .benefits p {
+        padding: 0px 1px;
+        font-size: 13px;
+    }
+
+    
+}
+

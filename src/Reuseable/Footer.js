@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../images/Logo';
+import Logo from '../images/Logo.svg';
 import './Footer.css';
 import Location from '../images/icon-location.svg';
 import Phone from '../images/icon-phone.svg';
@@ -7,11 +7,15 @@ import Email from '../images/icon-email.svg';
 import Facebook from '../images/Facebook';
 import Twitter from '../images/Twitter';
 import Instagram from '../images/Instagram';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
+
 
 const Footer = () => {
     return (
-        <div className='footer'>
-            <Logo />
+        <div className='footer' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="700">
+        <img src={Logo} alt='Logo' />
 
             <div className='inner-footer'>
                 <div className='location'>

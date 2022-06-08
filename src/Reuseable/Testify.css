@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-p {
+.p {
     color: azure;
     margin-bottom: 1.4em;
 }
@@ -31,4 +31,31 @@ h5, small {
     display: flex;
     align-items: center;
     gap: .7em;
+}
+
+@media  (max-width: 1024px) {
+    .p {
+        font-size: 12px;
+    }
+}
+
+@media  (max-width: 768px) {
+    .p {
+        font-size: 10px;
+        text-align: left;
+    }
+
+    .test {
+        padding: 40px 20px 20px 20px;
+    }
+
+    small {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 425px) {
+    .p {
+        font-size: 12px;
+    }
 }

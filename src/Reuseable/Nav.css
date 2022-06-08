@@ -15,11 +15,46 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2em;
+    gap: 4em;
 }
 
 .logo-container ul li {
     list-style: none;
     cursor: pointer;
     color: hsl(0, 0%, 60%);
+}
+
+
+.logo-container ul li:hover {
+    color: azure;
+    border-bottom: 1px solid azure;
+    transition-delay: .3s;
+}
+
+@media (max-width: 425px) {
+
+    .logo-container {
+        padding: 40px 20px;
+    }
+
+    .logo-container ul {
+        gap: 2em;
+    }
+
+    .logo {
+        width: 85px;
+    }
+}
+
+@media (max-width: 320px) {
+    .logo-container ul {
+        gap: 1em;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 280px) {
+    .logo-container ul {
+        font-size: 13px;
+    }
 }

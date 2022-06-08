@@ -1,11 +1,11 @@
 import React from 'react';
-import Logo from '../images/Logo'
+import Logo from '../images/Logo.svg'
 import './Nav.css'
 
 const Nav = () => {
   return (
     <div className='logo-container'>
-        <Logo/>
+      <img className='logo' src={Logo} alt='Logo' />
 
         <ul>
             <li>
@@ -15,7 +15,7 @@ const Nav = () => {
             <li>Team</li>
 
             <li>
-                Signin
+                Sign in
             </li>
         </ul>
     </div>

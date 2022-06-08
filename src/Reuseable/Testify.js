@@ -1,11 +1,13 @@
 import React from 'react';
 import './Testify.css';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
 
 const Testify = ({text, img, name, work}) => {
   return (
-    <div className='test'>
-        <p>
+    <div className='test' data-aos="fade-down" data-aos-anchor-placement="top-center" data-aos-duration="1300">
+        <p className='p'>
            {text}
         </p>
 
