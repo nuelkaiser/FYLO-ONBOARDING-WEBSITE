@@ -25,7 +25,7 @@ AOS.init();
 const LandingPages = () => {
 
     let [checker, SetChecker] = useState('');
-    let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    let mailformat = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
     const email = document.getElementById("check");
 
 
